@@ -11,6 +11,7 @@ In this lab you will learn how to do the following:
 ## Context
 
 For this lab, we will assume a retail use case and we will pretend that we have some enterprise data comprised of Stock Keeping Units (SKU) to Universal Product Code (UPC) mappings. A SKU is an identification that represents one or more UPCs and are unique to each retailer. A UPC is universal. That is, the same barcode is printed on all retail packages and represent a particular item. Typically the UPC is what is scanned at a checkout kiosk and if we assume the checkout kiosk sends data to EdgeX, then the value we will be receiving is a UPC -- thus we would need to understand which SKU is mapped to the UPC so we can inform an Enterprise Resource Planning (ERP) System which SKU and UPC has been scanned. Here is an example of a mapping:
+
     SKU XYZ: - Cool Shoes
         - UPC: 1234 - Black Shoes
         - UPC: 5678 - Red Shoes
