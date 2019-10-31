@@ -4,9 +4,9 @@ This lab will walk you through leveraging the App Functions SDK to build your ow
 
 In this lab you will learn how to do the following:
     
-    - Leverage Built-In Functions (ex, Filtering)
-    - Create your Function
-    - Publish data to a new ZMQ Topic
+- Leverage Built-In Functions (ex, Filtering)
+- Create your Function
+- Publish data to a new ZMQ Topic
 
 ## Context
 
