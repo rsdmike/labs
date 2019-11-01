@@ -12,4 +12,14 @@ In this lab you will learn how to do the following:
 
 For this lab we will pretend that the values coming in as Int32 from the virtual device is temperature data and will assume it is being published in celsius. Our goal is to filter out other values from the device service, convert celsius to fahrenheit, and publish to a new ZMQ topic. 
 
+For converting Celcius to Fahrenheit:
+```golang
+result := (t * 9 / 5 + 32)
+```
+where `t` is your temperature vlaue
+
 ## Steps
+
+
+
+
