@@ -1,4 +1,4 @@
-module lab1
+module lab3
 
 go 1.13
 

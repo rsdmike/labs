@@ -34,3 +34,10 @@ To bring up EdgeX use:
  2. Open up `~/Documents/labs`. 
  3. Open up a terminal in VSCode` (Ctrl+~)` -- this terminal is your remote session. You should see something similar to `user@ubuntu~f321a` for your terminal session.
  4. START LEARNING!
+
+ ## Labs
+
+### Lab 1 - Configuring App Service Configurable
+### Lab 2 - App Service Configurable - Ingest custom types via REST
+### Lab 3 - Using the App Functions SDK w/ custom functions
+### Lab 4 - App Functions SDK - Commanding a Device Service

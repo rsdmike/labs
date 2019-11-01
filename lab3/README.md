@@ -5,14 +5,15 @@ This lab will walk you through leveraging the App Functions SDK to build your ow
 In this lab you will learn how to do the following:
     
 - Leverage Built-In Functions (ex, Filtering)
-- Create your Function
+- Create a custom SDK Function
+- Leverage the context provided to a function
 - Publish data to a new ZMQ Topic
 
 ## Context
 
 For this lab we will pretend that the values coming in as Int64 from the virtual device is temperature data and will assume it is being published in celsius. Our goal is to filter out other values from the device service, convert celsius to fahrenheit, and publish to a new ZMQ topic. 
 
-For converting Celcius to Fahrenheit:
+For converting Celsius to Fahrenheit:
 ```golang
 result := (t * 9 / 5 + 32)
 ```
