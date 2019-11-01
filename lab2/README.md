@@ -56,10 +56,10 @@ curl -X POST \
   -d '[{"sku":"ABC1","upc":["1234","2345"]},{"sku":"DEF2","upc":["3456","4567"]}]'
 ```
 
-4. If you received no errors, you should now be able to see the data you sent in by querying core-data.
+5. If you received no errors, you should now be able to see the data you sent in by querying core-data.
 ```bash
 curl -X GET \
-  http://192.168.8.196:48080/api/v1/event/device/mydevicename/10
+  http://ipofmachine:48080/api/v1/event/device/mydevicename/10
 ```
 You should have retrieved a record similar to:
 ```json

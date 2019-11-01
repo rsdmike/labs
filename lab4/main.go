@@ -4,6 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"strconv"
+
 
 	"github.com/edgexfoundry/app-functions-sdk-go/appcontext"
 	"github.com/edgexfoundry/app-functions-sdk-go/appsdk"
@@ -15,7 +17,7 @@ func main() {
 
 	// 1) First thing to do is to create an instance of the EdgeX SDK, giving it a service key
 	edgexSdk := &appsdk.AppFunctionsSDK{
-		ServiceKey: "Lab3Exercise", // Key used by Registry (Aka Consul)
+		ServiceKey: "Lab4Exercise", // Key used by Registry (Aka Consul)
 	}
 
 	// 2) Next, we need to initialize the SDK
@@ -26,7 +28,7 @@ func main() {
 
 	// 3) Since our FilterByDeviceName Function requires the list of Device Names we would
 	// like to search for, we'll go ahead and define that now.
-	deviceNames := []string{"Random-Float-Device"}
+	deviceNames := []string{"Random-Integer-Device"}
 
 	// 4) This is our pipeline configuration, the collection of functions to
 	// execute every time an event is triggered.
@@ -50,13 +52,13 @@ func Fahrenheit(edgexcontext *appcontext.Context, params ...interface{}) (bool, 
 		return false, errors.New("No Data Received")
 	}
 	event := params[0].(models.Event)
-	temperatureInCelsius := event.Readings[0].Value.(int64)
+	temperatureInCelsius,_ := strconv.Atoi(event.Readings[0].Value)
 	// TODO: Convert the value
 	result := (temperatureInCelsius*9/5 + 32)
 	// TODO: Print out the value for debugging purposes using the logging on the context
-	edgexcontext.logging(string(result))
+	edgexcontext.LoggingClient.Info(strconv.Itoa(result))
 	// TODO: Publish the result to the ZMQ Topic (Step 4)
-	edgexcontext.Complete(result)
+	edgexcontext.Complete([]byte(strconv.Itoa(result)))
 
 	return true, nil
 }
