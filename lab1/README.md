@@ -38,7 +38,7 @@ For this lab we will consume data from EdgeX, perform some basic filtering, and 
 
 2. Let's take a look at the logs of app-service-configurable with the following command:
     ```shell
-    docker logs docker logs edgex-app-service-configurable-lab
+    docker logs edgex-app-service-configurable-lab
     ```
     We should see something akin to:
     ```

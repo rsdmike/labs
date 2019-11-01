@@ -16,10 +16,8 @@ For converting Celcius to Fahrenheit:
 ```golang
 result := (t * 9 / 5 + 32)
 ```
-where `t` is your temperature vlaue
+where `t` is your temperature value
 
 ## Steps
-
-
 
 
