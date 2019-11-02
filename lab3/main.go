@@ -34,7 +34,7 @@ func main() {
 		os.Exit(-1)
 	}
 
-	// 6) Lastly, we'll go ahead and tell the SDK to "start" and begin listening for events to trigger the pipeline.
+	// 5) Lastly, we'll go ahead and tell the SDK to "start" and begin listening for events to trigger the pipeline.
 	edgexSdk.MakeItRun()
 }
 

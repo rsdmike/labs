@@ -24,7 +24,7 @@ where `t` is your temperature value
 
 1) Open `main.go` in the lab3 directory. Go ahead and run `go build` and you should have a successful build just to make sure things are working. 
 
-2) As mentioned above, the first thing we'll want to do is look for Int64. To do this we can leverage the built-in SDK function called `FilterByDeviceName`.
+2) As mentioned above, the first thing we'll want to do is look for Int64. To do this we can leverage the built-in SDK function called `FilterByDeviceName` and use `FilterByValueDescriptor`.
 > Hint: You'll need to create a []string{} with the device name you wish to filter for. Check out the readme located here: https://github.com/edgexfoundry/app-functions-sdk-go 
 
 3) After you've defined the filter and added it to your pipeline in the SetFunctionPipeline call, let's define our custom function. We've already created the function signature for you, all you have to do is fill out the body add it to your pipeline.

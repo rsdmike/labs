@@ -13,6 +13,8 @@ For this lab we will inspect the converted temperature value, determine if it fa
 
 ## Steps
 
-
+1) Open up `main.go`. 
+2) Update the `ThresholdCheck` function with your threshold check.
+3) 
 
 
