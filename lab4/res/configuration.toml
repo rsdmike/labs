@@ -54,6 +54,11 @@ Password = ""
   Host = "localhost"
   Port = 48061
 
+  [Clients.Command]
+  Protocol = "http"
+  Host = "localhost"
+  Port = 48082
+
 [MessageBus]
 Type = 'zero'
     [MessageBus.PublishHost]

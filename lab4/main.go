@@ -71,8 +71,9 @@ func ThresholdCheck(edgexcontext *appcontext.Context, params ...interface{}) (bo
 	// TODO: Check that there is a result to work with
 
 	// TODO: Determine if value falls outside of threshold parameters
-	
+
 	// TODO: Send command using context to device-service to turn it off
+
 	// TODO: Return appropriate values back to the pipeline
 	return true, nil
 }
