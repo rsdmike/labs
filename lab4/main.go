@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"context"
+	// "context"
 
 
 	"github.com/edgexfoundry/app-functions-sdk-go/appcontext"
